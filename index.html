@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>土石流偵測預警</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <link href="css/bootcamp.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="img/nthu.png" />
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Data Mining Demo</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#motivation">Motivation</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#model">Model</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#video">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#members">Members</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-12 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-10">土石流偵測預警</h1>
+			  <h2 class="mb-10">Mudslide Prediction System</h2>
+			  </br>
+              <div class="btn btn-secondary btn-sm bottom-right explore wow fadeInDown" style="margin-bottom:10px;">
+                <i class="fa fa-arrow-down"></i><br/>
+                了解更多
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <section style="display:none;">
+  </section>
+
+    <section class="features" id="motivation">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>發想</h2>
+          <p class="text-muted">土石流在台灣是一種常見的自然災害，我們希望能藉由這學期所學的知識，幫助我們建立一套有助於偵測/預警土石流災害的系統</p>
+          <p>Our main goal is to construct a image recognition model (using CNN), which can distinguish whether a mudslide is happening</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="feature-item">
+                    <i class="wow fadeInDown fa fa-database"></i>
+                    <h3>利用政府資料</h3>
+                    <h4>Open Data</h4>
+                    <p class="text-muted">利用政府土石流觀測站的影像，訓練模型以檢測土石流的發生</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="feature-item">
+                    <i class="wow fadeInDown fa fa-file-code"></i>
+                    <h3>深度學習模型</h3>
+                    <h4>Deep Learning Model</h4>
+                    <p class="text-muted">使用NasNet捲積類神經網路架構，再圖像辨識上擁有高精確度</p>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="feature-item">
+                    <i class="wow fadeInDown fa fa-robot"></i>
+                    <h3>及時偵測預警</h3>
+                    <h4>Instant Detection</h4>
+                    <p class="text-muted">結合政府觀測站及時影像，系統有能力及時判斷土石流是否發生</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	<section class="info bg-primary" id="data">
+    <div class="wow bounceInLeft container">
+		<div class="section-heading text-center">
+          <h2>資料來源</h2>
+          <p>為了訓練我們的深度學習模型，我們從政府的土石流防治網站，以及google搜尋取得相關圖片進行訓練</p>
+          <p>To train and evaluate our model, we collect images from both government's website and google search</p>
+          <hr>
+        </div>
+    <div class="row">
+      <div class="col-md-6 card" >
+  		  <img class="card-img-top" src="img/train_img.jpg" alt="Card image cap">
+  		  <div class="card-body">
+  			<p class="card-text">範例影像-政府土石流防災網</p>
+  		  </div>
+  		</div>
+      <div class="col-md-6 card" >
+  		  <img class="card-img-top" src="img/train_img2.jpg" alt="Card image cap">
+  		  <div class="card-body">
+  			<p class="card-text">範例影像-Google圖片</p>
+  		  </div>
+  		</div>
+    </div>
+  </div>
+    </section>
+
+    <section class="schedule text-center" id="model">
+      <div class="container text-center">
+        <div class="section-heading">
+          <h2>模型架構</h2>
+          <p>我們使用Google brain所提出的NasNet模型，用強化學習的方式自動產生網絡結構</p>
+          <p>We use NasNet model from google brain, which uses reinforcement learning to find out the best architecture</p>
+          <hr></br></br>
+
+          <img class="col-md-6" src="img/nasnet.jpg" alt="Card image cap">
+          <!--img class="col-md-6" src="img/nasnet2.jpg" alt="Card image cap"-->
+        </div>
+  		</div>
+    </div>
+    </section>
+
+  <section class="host text-center bg-primary" id="video">
+    <div class="section-heading text-center">
+          <h2>展示影片</h2>
+          <p>影片右下角顯示系統偵測出土石流發生的機率，若判斷為發生則變為紅色</p>
+          <p>The bottom-right corner of the demo video show the possibility of mudslide that our model predicts</p>
+          <hr>
+      </div>
+
+      <video width="480" height="360" controls>
+        <source src="video/Video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <video width="480" height="360" controls>
+        <source src="video/Video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <video width="480" height="360" controls>
+        <source src="video/Video3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </section>
+
+  <section class="" id="members">
+  <div class="section-heading text-center" id="members">
+		<h2>組員介紹</h2>
+    <p>Our Members</p>
+		<hr>
+	</div>
+  <div class="container">
+	<div class="row d-flex justify-content-center wow fadeIn">
+		<div class="col-md-3 card" >
+		  <img class="card-img-top" src="img/member2.jpg" alt="Card image cap">
+		  <div class="card-body">
+			<h4 class="card-title">吳義路</h4>
+			<p class="card-text">清華大學碩士生</p>
+		  </div>
+		</div>
+		<div class="col-md-3 card" >
+		  <img class="card-img-top" src="img/member1.jpg" alt="Card image cap">
+		  <div class="card-body">
+			<h4 class="card-title">王宇正</h4>
+			<p class="card-text">清華大學碩士生</p>
+		  </div>
+		</div>
+		<div class="col-md-3 card" >
+		  <img class="card-img-top" src="img/member3.jpg" alt="Card image cap">
+		  <div class="card-body">
+			<h4 class="card-title">林晉祥</h4>
+			<p class="card-text">清華大學學士生</p>
+		  </div>
+		</div>
+	</div>
+  </div>
+  </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2019 Datamining Final Demo</p>
+        <p>baseline</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/bootcamp.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+
+</html>
