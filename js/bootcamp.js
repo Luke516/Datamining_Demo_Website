@@ -81,4 +81,10 @@ function upPos(){
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  setInterval(function() {
+      var RealtimeImageElement = document.getElementById('RealtimeImage');
+      RealtimeImageElement.src = "http://140.114.91.173:8000/newest.jpg";
+      console.log("refresh");
+  }, 5000);
+
 })(jQuery)); // End of use strict
