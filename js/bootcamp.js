@@ -83,8 +83,8 @@ function upPos(){
 
   setInterval(function() {
       var RealtimeImageElement = document.getElementById('RealtimeImage');
-      RealtimeImageElement.src = "http://140.114.91.173:8000/newest.jpg";
+      RealtimeImageElement.src = "http://140.114.91.173:8000/newest.jpg?rnd="+Math.random();
       console.log("refresh");
-  }, 5000);
+  }, 1000);
 
 })(jQuery)); // End of use strict
